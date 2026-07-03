@@ -1,10 +1,12 @@
-# OS & editor noise
+# OS & IDE noise
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 *.swp
 *.swo
+logs
+/logs/*.log
 
 # Local env files (never commit secrets)
 .env

@@ -10,7 +10,7 @@ Source code of the Genomixcloud docker images and AWS guidances: <https://github
 
 2\. Purpose:
 
-- The primary purpose of Genomix Cloud Docker Images is to empower bioinformaticians to effectively understand and technically implement bioinformatic tool docker images following the best practices and provide bioinformaticians with clues that let them implement bioinformatic tools in the AWS Ecosystem.
+- The primary purpose of Genomix Cloud Docker Images is to empower bioinformatic specialist to effectively understand and technically implement bioinformatic tool docker images following the best practices and provide bioinformatic specialist with clues that let them implement bioinformatic tools in the AWS Ecosystem.
 
 3\. Features:
 

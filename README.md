@@ -23,7 +23,7 @@ The repository hosts the plain images of the bioinformatic tools that are part o
 | [FastP](fastp) | 1.0.1 | MIT |
 | [FimTyper](fimtyper) | — | — |
 | [Kraken2](kraken2) | 2.1.6 | MIT |
-| [MacSyFinder](macsyfinder) | — *(image build in progress)* | — |
+| [MacSyFinder](macsyfinder) | — |
 | [Mlst](mlst) | 2.23.0 | GPL-2.0 |
 | [Pilon](pilon) | 1.23 | GPL-2.0-only |
 | [Platon](platon) | 1.7 | GPL-3.0 |
@@ -40,7 +40,7 @@ Versions above reflect what's currently packaged in each tool's Dockerfile. FimT
 
 ## Contributing
 
-Found a bug, want to bump a tool version, or have a genomics tool you'd like to see added? See [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a bug, want to bump a tool version, or have a bioinformatic tool you'd like to see added? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
