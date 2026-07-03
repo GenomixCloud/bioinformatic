@@ -1,16 +1,20 @@
-[![name](assets/genomixlogo.png)](https://genomixcloud.com/)
-
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GenomixCloud/bioinformatic?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/genomixcloud?style=social)
 
-[Genomix Cloud](https://genomixcloud.com/) is a platform designed to provide researchers, biologists, geneticists, and other professionals in the field of genomics with a powerful suite of bioinformatics tools in the Cloud to analyze and interpret genomic data.
+[Genomix Cloud](https://genomixcloud.com/) is a cloud platform that gives researchers, bioinformatic specialists, and other genomics professionals a powerful suite of bioinformatics tools to analyze and interpret genomic data.
+
+We've already built and battle-tested a lot of this tooling for our own pipelines. Rather than keep it locked away, we're publishing pieces of it here for the wider bioinformatics community — free to use, fork, and improve.
+
+---
+Start here
+[Genomix Cloud Docker images repository](https://hub.docker.com/u/genomixcloud) — ready-to-use Docker images for common bioinformatics tools (Abricate, Bakta, CheckM, FastQC, Kraken2, SPAdes, and more), the same ones we run in production.
 
 ---
 
-[Genomix Cloud Docker images repository](https://hub.docker.com/u/genomixcloud)
+More tools will land here as we open-source more of our stack.
 
 ---
 
-Please note that this repository is continuously evolving and includes the source code for our basic images. You will find in this repository instructions on building the Docker images used in our various workflows. Additionally, we provide suggestions on enhancing performance and automation within the AWS ecosystem.
+Please note that this repository is continuously evolving and includes the source code for our Docker images. You will find in this repository instructions on building the Docker images used in our various workflows. Additionally, we provide suggestions on enhancing performance and automation within the AWS ecosystem.
 
 The repository hosts the plain images of the bioinformatic tools that are part of the Genomixcloud platform. These images form the foundation for our suite of bioinformatic tools and can help support various genomic analysis tasks.
 
