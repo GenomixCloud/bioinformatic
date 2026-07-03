@@ -2,7 +2,7 @@ Manifest of Technical Product: genomixcloud docker images
 
 Genomixcloud docker images: <https://hub.docker.com/u/genomixcloud>
 
-Source code of the Genomixcloud docker images and AWS guidances: <https://github.com/GenomixCloud/genomixcloud.bioinformatic>
+Source code of the Genomixcloud docker images and AWS guidances: <https://github.com/GenomixCloud/bioinformatic>
 
 1\. Introduction:
 
@@ -50,6 +50,6 @@ Source code of the Genomixcloud docker images and AWS guidances: <https://github
 
 9\. Distribution:
 
-- [Github](https://github.com/GenomixCloud/genomixcloud.bioinformatic)
+- [Github](https://github.com/GenomixCloud/bioinformatic)
 
 - [Docker Hub](https://hub.docker.com/u/genomixcloud)

@@ -1,6 +1,6 @@
 [![name](assets/genomixlogo.png)](https://genomixcloud.com/)
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GenomixCloud/genomixcloud.bioinformatic?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/genomixcloud?style=social)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GenomixCloud/bioinformatic?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/genomixcloud?style=social)
 
 [Genomix Cloud](https://genomixcloud.com/) is a platform designed to provide researchers, biologists, geneticists, and other professionals in the field of genomics with a powerful suite of bioinformatics tools in the Cloud to analyze and interpret genomic data.
 
