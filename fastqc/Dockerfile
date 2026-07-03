@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y \
  apt-get autoclean && rm -rf /var/lib/apt/lists/*
 
 # install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 # install fastqc; make /data
  RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v${FASTqcVer}.zip && \

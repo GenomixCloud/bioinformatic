@@ -8,6 +8,10 @@ RUN apt-get update && apt-get install -y python \
  apt-get autoclean && rm -rf /var/lib/apt/lists/*
 
 # install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 # install SPAdes binary; make /data
 RUN wget https://github.com/ablab/spades/releases/download/v${SPAdesVer}/SPAdes-${SPAdesVer}-Linux.tar.gz && \

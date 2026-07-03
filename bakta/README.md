@@ -63,15 +63,7 @@ docker run --name bakta --rm -ti genomixcloud/bakta \
 
 **AWS S3**
 
-**Mandatory**
-
-In environment.yaml file:
-
-Under **depedencies** add the AWS cli dependency:
-
-```
-- awscli
-```
+**AWS CLI is already installed in this image** — no manual edits needed.
 
 Other considerations:
 

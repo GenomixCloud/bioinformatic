@@ -16,8 +16,15 @@ RUN apt install python3 -y
 RUN apt-get install -y \
     g++ \
     rsync \
+    unzip \
     ncbi-blast+ && \
     rm -rf /var/lib/apt/lists/* && apt-get autoclean
+
+# install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 # getting kraken2
 RUN wget -P /usr/local/ https://github.com/DerrickWood/kraken2/archive/v${K2pVer}.tar.gz && \

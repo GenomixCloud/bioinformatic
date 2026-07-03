@@ -21,6 +21,13 @@ RUN conda env create --quiet -f /src/environment.yaml
 ## RUN source activate bakta_env
 RUN echo "source activate bakta_env" > ~/.bashrc
 ENV PATH /opt/conda/envs/bakta_env/bin:$PATH
+# install awscli
+RUN apt-get update && apt-get install -y --no-install-recommends unzip && rm -rf /var/lib/apt/lists/* && \
+    wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
+
 COPY ./src/* /src/
 WORKDIR /data
 CMD ["/bin/bash", "-c"]

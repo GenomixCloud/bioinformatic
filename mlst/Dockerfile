@@ -34,6 +34,10 @@ RUN wget https://github.com/tseemann/mlst/archive/v${MlstVer}.tar.gz && \
  rm v${MlstVer}.tar.gz
 
 # install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 COPY ./conf/* /conf/
 COPY ./src/* /src/

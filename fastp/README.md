@@ -47,18 +47,7 @@ genomixcloud/fastp:my_version fastp \
 
 **AWS S3**
 
-**Mandatory**
-
-In Dockerfile file:
-
-Under comment **# install awscli** add the following code:
-
-```shell
-RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
-unzip -d /usr/src/  /usr/src/awscli-exe-linux-x86_64.zip && \
-rm /usr/src/awscli-exe-linux-x86_64.zip && \
-/usr/src/aws/install
-```
+**AWS CLI is already installed in this image** — no manual Dockerfile edits needed.
 
 Considerations:
 

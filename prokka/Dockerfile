@@ -76,6 +76,10 @@ ENV PATH="${PATH}:/ncbi-blast-${BLAST_VER}+/bin/:\
  LC_ALL=C
 
 # install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 # index dbs and list what dbs were setup; set working dir to /data
 RUN prokka --setupdb && prokka --listdb

@@ -14,25 +14,27 @@ Please note that this repository is continuously evolving and includes the sourc
 
 The repository hosts the plain images of the bioinformatic tools that are part of the Genomixcloud platform. These images form the foundation for our suite of bioinformatic tools and can help support various genomic analysis tasks.
 
-1. [Abricate](abricate)
-2. [Bakta](bakta)
-3. [CheckM](checkm)
-4. [FastQC](fastqc)
-5. [FastP](fastp)
-6. [FimTyper](fimtyper)
-7. [Kraken2](kraken2)
-8. [MacSyFinder](macsyfinder) *(image build in progress)*
-9. [Mlst](mlst)
-10. [Pilon](pilon)
-11. [Platon](platon)
-12. [Prokka](prokka)
-13. [Quast](quast)
-14. [Roary](roary)
-15. [SPAdes](spades)
+| Tool | Version | License |
+|---|---|---|
+| [Abricate](abricate) | 1.0.0 | GPL-2.0 |
+| [Bakta](bakta) | 1.11.4 | GPL-3.0 |
+| [CheckM](checkm) | 1.2.4 | GPL-3.0 |
+| [FastQC](fastqc) | 0.12.0 | GPL-3.0-or-later |
+| [FastP](fastp) | 1.0.1 | MIT |
+| [FimTyper](fimtyper) | — | — |
+| [Kraken2](kraken2) | 2.1.6 | MIT |
+| [MacSyFinder](macsyfinder) | — *(image build in progress)* | — |
+| [Mlst](mlst) | 2.23.0 | GPL-2.0 |
+| [Pilon](pilon) | 1.23 | GPL-2.0-only |
+| [Platon](platon) | 1.7 | GPL-3.0 |
+| [Prokka](prokka) | — | — |
+| [Quast](quast) | 5.2.0 | GPL-2.0-only |
+| [Roary](roary) | 3.13.0 | GPL-3.0 |
+| [SPAdes](spades) | 3.15.3 | GPL-2.0-only |
 
-<br></br>
+Versions above reflect what's currently packaged in each tool's Dockerfile. FimTyper and Prokka versions aren't tracked yet — see [CONTRIBUTING.md](CONTRIBUTING.md) if you'd like to help document them.
 
-![Alt text](assets/microbial_genome_pipeline.svg 'Microbial Genome Pipeline')
+**Note on licensing:** the MIT license below covers this repository's own Dockerfiles, scripts, and documentation. Each wrapped tool keeps its own upstream license (see table above), and some tools support optional reference databases with their own separate usage terms — check the tool's own documentation before relying on any bundled database for commercial work.
 
 ---
 

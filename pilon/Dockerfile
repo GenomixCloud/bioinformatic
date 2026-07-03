@@ -40,6 +40,10 @@ tar -vxjf samtools-${SamToolsVer}.tar.bz2 && rm samtools-${SamToolsVer}.tar.bz2 
 && cd samtools-${SamToolsVer} && make
 
 # install awscli
+RUN wget -P /usr/src/ https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && \
+    unzip -d /usr/src/ /usr/src/awscli-exe-linux-x86_64.zip && \
+    rm /usr/src/awscli-exe-linux-x86_64.zip && \
+    /usr/src/aws/install
 
 COPY ./conf/* /conf/
 COPY ./src/* /src/
