@@ -1,0 +1,15 @@
+# OS & editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker build artifacts
+*.tar
+*.tar.gz
+
+# Local env files (never commit secrets)
+.env
+.env.*
