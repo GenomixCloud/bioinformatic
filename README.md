@@ -49,3 +49,5 @@ Found a bug, want to bump a tool version, or have a bioinformatic tool you'd lik
 ## License
 
 Released under the [MIT License](LICENSE) — use freely, including commercially, with attribution.
+
+See [Manifest.md](Manifest.md) for the full product manifest (purpose, roadmap, design principles).
