@@ -1,34 +1,40 @@
-# GenomixCloud Bioinformatics Docker Images
+[![name](assets/genomixlogo.png)](https://genomixcloud.com/)
 
-Ready-to-use, versioned Docker images for the bioinformatics tools that power the [GenomixCloud](https://www.genomixcloud.com) genomics pipeline — shared freely with the bioinformatics and genomics community.
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GenomixCloud/genomixcloud.bioinformatic?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/genomixcloud?style=social)
 
-These are the same images we run in production. If you're building your own pipeline and need a reliable, pre-configured container for a common genomics tool, you're welcome to pull these directly instead of building your own from scratch.
+[Genomix Cloud](https://genomixcloud.com/) is a platform designed to provide researchers, biologists, geneticists, and other professionals in the field of genomics with a powerful suite of bioinformatics tools in the Cloud to analyze and interpret genomic data.
 
-## Why we're sharing this
+---
 
-Bioinformatics tooling is notoriously fiddly to install and version correctly — dependency hell, mismatched reference formats, undocumented flags. We already solved that problem for our own pipeline, so instead of every lab and every company re-solving it independently, we're publishing the images we depend on. Use them, fork them, improve them.
+[Genomix Cloud Docker images repository](https://hub.docker.com/u/genomixcloud)
 
-## Available tools
+---
 
-| Tool | Description | Image | Docs |
-|------|-------------|-------|------|
-| _coming soon_ | | | |
+Please note that this repository is continuously evolving and includes the source code for our basic images. You will find in this repository instructions on building the Docker images used in our various workflows. Additionally, we provide suggestions on enhancing performance and automation within the AWS ecosystem.
 
-*(This table grows as tools are added — see [Contributing](#contributing) if you'd like to add one.)*
+The repository hosts the plain images of the bioinformatic tools that are part of the Genomixcloud platform. These images form the foundation for our suite of bioinformatic tools and can help support various genomic analysis tasks.
 
-## Usage
+1. [Abricate](abricate)
+2. [Bakta](bakta)
+3. [CheckM](checkm)
+4. [FastQC](fastqc)
+5. [FastP](fastp)
+6. [FimTyper](fimtyper)
+7. [Kraken2](kraken2)
+8. [MacSyFinder](macsyfinder) *(image build in progress)*
+9. [Mlst](mlst)
+10. [Pilon](pilon)
+11. [Platon](platon)
+12. [Prokka](prokka)
+13. [Quast](quast)
+14. [Roary](roary)
+15. [SPAdes](spades)
 
-Each tool lives in its own folder under [`tools/`](tools/) with its own `Dockerfile` and a short `README.md` covering usage, versioning, and any tool-specific notes.
+<br></br>
 
-```bash
-# Pull a pre-built image (once published)
-docker pull ghcr.io/genomixcloud/<tool-name>:latest
+![Alt text](assets/microbial_genome_pipeline.svg 'Microbial Genome Pipeline')
 
-# Or build it yourself from source
-git clone https://github.com/GenomixCloud/GenomixCloudPublicRepo.git
-cd GenomixCloudPublicRepo/tools/<tool-name>
-docker build -t <tool-name> .
-```
+---
 
 ## Contributing
 
